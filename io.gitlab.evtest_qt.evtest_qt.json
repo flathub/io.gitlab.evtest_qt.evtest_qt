@@ -1,13 +1,14 @@
 {
     "app-id": "io.gitlab.evtest_qt.evtest_qt",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.11",
+    "runtime-version": "5.14",
     "sdk": "org.kde.Sdk",
     "rename-appdata-file": "evtest-qt.appdata.xml",
     "rename-icon": "evtest-qt",
     "rename-desktop-file": "evtest-qt.desktop",
     "finish-args": [
         "--device=all",
+        "--env=QT_QPA_PLATFORM=xcb",
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland"
@@ -17,8 +18,7 @@
             "name": "evtest-qt",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_PREFIX:PATH=/app"
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "sources": [
                 {
