@@ -3,15 +3,14 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
+    "command": "evtest-qt",
     "rename-appdata-file": "evtest-qt.appdata.xml",
     "rename-icon": "evtest-qt",
     "rename-desktop-file": "evtest-qt.desktop",
     "finish-args": [
         "--device=all",
         "--share=ipc",
-        "--socket=fallback-x11",
-        "--socket=x11",
-        "--socket=wayland"
+        "--socket=x11"
     ],
     "modules": [
         {
