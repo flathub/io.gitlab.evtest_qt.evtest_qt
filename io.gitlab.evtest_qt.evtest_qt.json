@@ -1,7 +1,7 @@
 {
     "app-id": "io.gitlab.evtest_qt.evtest_qt",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15",
+    "runtime-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
     "command": "evtest-qt",
     "rename-appdata-file": "evtest-qt.appdata.xml",
